@@ -53,7 +53,7 @@ public class patterns extends stringStats {
 		
 		for (int i = 1; i <arrTemp.size(); i++) {
 			
-			System.out.println(arrTemp.get(i));
+			
 			
 			// If current item is equal to the previous
 			if (arrTemp.get(i).equals( arrTemp.get(i-1))){
