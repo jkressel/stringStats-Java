@@ -6,7 +6,7 @@ import eu.japk.stringStats.*;
 
 public class Test {
  public static void main(String[] args){
-	 auto at = new auto("aaaaabbbbbcccccc",false,false);
+	 patterns at = new patterns("abcbcaabc",2);
 	 System.out.println(Arrays.toString(at.mode()));
 	 
  }

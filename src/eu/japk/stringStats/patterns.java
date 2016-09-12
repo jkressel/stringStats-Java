@@ -35,7 +35,7 @@ public class patterns extends stringStats {
 		String[] tempArr = new String[input.length()];
 		tempArr = input.split("");
 		arrTemp = new ArrayList<String>();
-		for (int i = 0; i < tempArr.length - numberLength; i++){
+		for (int i = 0; i < tempArr.length - (numberLength-1); i++){
 			int numToIncrease = 1;
 			String tempStr = tempArr[i];
 			while (numToIncrease < numberLength){
@@ -52,7 +52,9 @@ public class patterns extends stringStats {
 		least.add(arrTemp.get(0));
 		
 		for (int i = 1; i <arrTemp.size(); i++) {
-
+			
+			System.out.println(arrTemp.get(i));
+			
 			// If current item is equal to the previous
 			if (arrTemp.get(i).equals( arrTemp.get(i-1))){
 				currentMax++;
