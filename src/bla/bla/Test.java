@@ -6,8 +6,8 @@ import eu.japk.stringStats.*;
 
 public class Test {
  public static void main(String[] args){
-	 patterns at = new patterns("abcbcaabc",2);
-	 System.out.println(Arrays.toString(at.least()));
+	 specifiedNumber at = new specifiedNumber("abcbdcaabcd",2);
+	 System.out.println(Arrays.toString(at.Greater()));
 	 
  }
 }
